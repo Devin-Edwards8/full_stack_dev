@@ -17,7 +17,7 @@ app.use(express.static('public'))
 app.use('/', indexRouter)
 
 const mongoose = require('mongoose')
-const { parse } = require('dotenv')
+// const { parse } = require('dotenv')
 mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true
 })
